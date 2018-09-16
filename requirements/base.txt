@@ -1,4 +1,6 @@
-Django
+setuptools
+setuptools
+setuptoolsDjango
 gunicorn
 Jinja2
 MarkupSafe
@@ -13,6 +15,3 @@ dj-database-url
 django-storages
 Pillow
 django-tinymce
-setuptools
-setuptools
-setuptools
