@@ -1,4 +1,5 @@
 pip==18.0
+pip3
 setuptools==40.3.0
 Django
 gunicorn
