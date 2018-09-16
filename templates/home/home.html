@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="page gradient-3">
+    <div class="page-content">
+
+        <section class="page-padding">
+            <h1 class="page-title">Welcome to Zoe's Cakes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi dolorem enim et eveniet explicabo fugit in itaque laudantium magnam minima minus modi molestias necessitatibus possimus sapiente, similique ut veritatis!</p>
+        </section>
+
+        <section id="category" class="page-padding">
+            <h1 class="page-title">Welcome to Zoe's Cakes</h1>
+            <div id="category-images">
+                {% for item in category %}
+                    <div class="category-item">
+                        <img src="{{ item.image.url }}">
+                        <a href="category/{{ item.slug }}" class="link" alt="cumt">{{ item }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+    </div>
+
+</div>
+{% endblock %}

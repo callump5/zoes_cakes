@@ -1,0 +1,1 @@
+web: gunicorn zoes_cakes.wsgi :app
