@@ -1,6 +1,7 @@
 setuptools
 setuptools
-setuptoolsDjango
+setuptools
+Django
 gunicorn
 Jinja2
 MarkupSafe
