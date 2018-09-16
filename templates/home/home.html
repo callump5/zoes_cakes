@@ -1,8 +1,6 @@
 {% extends 'index.html' %}
 
 {% block content %}
-<div class="page gradient-3">
-    <div class="page-content">
 
         <section class="page-padding">
             <h1 class="page-title">Welcome to Zoe's Cakes</h1>
@@ -10,18 +8,15 @@
         </section>
 
         <section id="category" class="page-padding">
-            <h1 class="page-title">Welcome to Zoe's Cakes</h1>
+            <h1 class="page-title">Check out all the different types of cakes we offer!</h1>
             <div id="category-images">
                 {% for item in category %}
                     <div class="category-item">
                         <img src="{{ item.image.url }}">
-                        <a href="category/{{ item.slug }}" class="link" alt="cumt">{{ item }}</a>
+                        <a href="{% url 'category' item.slug %}" class="link">{{ item }}</a>
                     </div>
                 {% endfor %}
             </div>
         </section>
 
-    </div>
-
-</div>
 {% endblock %}
