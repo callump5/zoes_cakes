@@ -1,6 +1,5 @@
-setuptools
-setuptools
-setuptools
+pip==18.0
+setuptools==40.3.0
 Django
 gunicorn
 Jinja2
